@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/bt_two"
         android:layout_centerHorizontal="true"
-        android:text="第三种风格（滚动条长度固定死）" />
+        android:text="第三种风格（滚动条为小圆点）" />
 
 
 </RelativeLayout>
