@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.homechart.app.tablayoutdemo.R;
 
-public class ThreeFragment extends Fragment {
+public class OneFragment1 extends Fragment {
     private String mTitle;
 
     @Override
@@ -18,7 +18,7 @@ public class ThreeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_three, null);
+        View v = inflater.inflate(R.layout.fragment_one, null);
         return v;
     }
 }

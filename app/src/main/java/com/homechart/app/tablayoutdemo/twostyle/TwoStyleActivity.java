@@ -1,14 +1,17 @@
-package com.homechart.app.tablayoutdemo.onestyle;
+package com.homechart.app.tablayoutdemo.twostyle;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.flyco.tablayout.SlidingTabLayout;
 import com.homechart.app.tablayoutdemo.R;
+import com.homechart.app.tablayoutdemo.onestyle.OneFragment1;
+import com.homechart.app.tablayoutdemo.onestyle.OneFragment2;
+import com.homechart.app.tablayoutdemo.onestyle.OneFragment3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +36,7 @@ import java.util.List;
  * app:tl_underline_color="#1A000000"             ----下面线条的颜色
  * app:tl_underline_height="1dp" />               ----下面线条的高度
  */
-public class OneStyleActivity extends AppCompatActivity {
+public class TwoStyleActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private SlidingTabLayout mTabLayout;
@@ -46,15 +49,15 @@ public class OneStyleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one);
+        setContentView(R.layout.activity_two);
 
         mViewPager = (ViewPager) findViewById(R.id.vp_view);
         mTabLayout = (SlidingTabLayout) findViewById(R.id.tly_slidingtablayout);
 
         //设置下划线的高度
-        mTabLayout.setIndicatorHeight(5f);
+//        mTabLayout.setIndicatorHeight(5f);
         //设置tab的字体大小
-        mTabLayout.setTextsize(15f);
+//        mTabLayout.setTextsize(15f);
 
         initFragment();
 
@@ -90,8 +93,8 @@ public class OneStyleActivity extends AppCompatActivity {
 
 
     private void initFragment() {
-        mFragmentsList.add(new OneFragment1());
-        mFragmentsList.add(new OneFragment2());
-        mFragmentsList.add(new OneFragment3());
+        mFragmentsList.add(new TwoFragment1());
+        mFragmentsList.add(new TwoFragment2());
+        mFragmentsList.add(new TwoFragment3());
     }
 }

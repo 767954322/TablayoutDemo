@@ -1,4 +1,4 @@
-package com.homechart.app.tablayoutdemo.onestyle;
+package com.homechart.app.tablayoutdemo.twostyle;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.homechart.app.tablayoutdemo.R;
 
-public class OneFragment extends Fragment {
+public class TwoFragment2 extends Fragment {
     private String mTitle;
 
     @Override
@@ -18,7 +18,7 @@ public class OneFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_one, null);
+        View v = inflater.inflate(R.layout.fragment_two, null);
         return v;
     }
 }

@@ -12,7 +12,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="第一种风格（与问题等长和填充）" />
+        android:text="第一种风格（滚动条与标题等长和填充）" />
+
+    <Button
+        android:id="@+id/bt_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bt_one"
+        android:text="第二种风格（滚动条在上边）" />
 
 
 </RelativeLayout>

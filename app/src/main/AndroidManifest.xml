@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".onestyle.OneStyleActivity" />
+        <activity android:name=".twostyle.TwoStyleActivity" />
     </application>
 
 </manifest>
