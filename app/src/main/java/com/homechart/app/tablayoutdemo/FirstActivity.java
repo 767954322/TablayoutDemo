@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.homechart.app.tablayoutdemo.onestyle.OneStyleActivity;
+import com.homechart.app.tablayoutdemo.threestyle.ThreeStyleActivity;
 import com.homechart.app.tablayoutdemo.twostyle.TwoStyleActivity;
 
 /**
@@ -30,6 +31,13 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, TwoStyleActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.bt_three).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, ThreeStyleActivity.class);
                 startActivity(intent);
             }
         });
