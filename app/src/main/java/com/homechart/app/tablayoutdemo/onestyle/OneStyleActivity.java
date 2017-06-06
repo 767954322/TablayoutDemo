@@ -38,7 +38,7 @@ public class OneStyleActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private SlidingTabLayout mTabLayout;
 
-    private final String[] mTitles = {"tab1", "tab山东测试2", "tab3"};
+    private final String[] mTitles = {"tab1", "tab2", "tab3"};
     ;//页卡标题集合
     private List<Fragment> mFragmentsList = new ArrayList<>();//页卡视图集合
     private MyPagerAdapter mAdapter;
